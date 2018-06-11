@@ -9,4 +9,4 @@ while True:
     myfile = open('path_to+file/working.txt','rb') #uploaded file
     ftp.storlines('STOR '+filename,myfile)
     ftp.quit()
-    time.sleep(60)   # you can change for time according to internet speed
+    time.sleep(60)   # you can change for sleep time
