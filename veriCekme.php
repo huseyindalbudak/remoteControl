@@ -7,7 +7,7 @@
     <title>veriCekme</title>
 </head>
 <body>
-    
+ <!-----------------------php----------------------->   
 <?php
 
 // it can take any type of data according to html type in a website
@@ -23,15 +23,21 @@ echo $baslik[0][0];
 echo "<br>" ;  //for next line in html
 echo var_dump($baslik[0][0]);  // output data type via php function
 ?>
+ <!----------------------end-of-php----------------------->   
     
     
 <p id="demom">test</p>
+    
+    
 
+ <!-----------------------JavaScript----------------------->   
     
 <script>
 var text = document.getElementById("h_td_fiyat_id_UZIGGV").innerHTML;
 alert(text);
 //text variable can use for any operation but data type that can converte is important 
 </script>
+ <!-----------------------JavaScript----------------------->   
+
 
 </body>
