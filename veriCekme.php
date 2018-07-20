@@ -18,9 +18,8 @@ $veri = file_get_contents("http://bigpara.hurriyet.com.tr/viop-varant/canli-vara
 //preg_match_all() is special php function
 preg_match_all('@ <li class="cell048 node-c" id="h_td_fiyat_id_UZIGGV">(.*?)</li>@si',$veri,$baslik);
 
-// veri is array 
-$veri= $baslik[0][0];
-echo $veri  ;
+// $baslik variable is array 
+echo $baslik[0][0];
 echo "<br>" ;  //for next line in html
 echo var_dump($baslik[0][0]);  // output data type via php function
 ?>
@@ -32,6 +31,7 @@ echo var_dump($baslik[0][0]);  // output data type via php function
 <script>
 var text = document.getElementById("h_td_fiyat_id_UZIGGV").innerHTML;
 alert(text);
+//text variable can use for any operation but data type that can converte is important 
 </script>
 
 </body>
